@@ -1,0 +1,20 @@
+   # 初始化 Git 仓库
+   git init
+
+   # 添加 .gitignore 文件
+   echo "node_modules/
+   .env
+   .DS_Store
+   /myapp/dist
+   /myapp/node_modules
+   /backend/node_modules
+   *.log" > .gitignore
+
+   # 添加文件到 Git
+   git add .
+   git commit -m "Initial commit"
+
+   # 连接到 GitHub 仓库
+   git remote add origin https://860775023.github.io/zhonghua/
+   git branch -M main
+   git push -u origin main
