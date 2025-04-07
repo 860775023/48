@@ -5,6 +5,7 @@ import path from 'path'
 export default defineConfig({
   plugins: [vue()],
   root: './',
+  base: '/48/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets'
